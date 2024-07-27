@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <p> The Beginning of New </p>
+        <h1> Frequently Asked Questions </h1>
+        
+        <div class="faq active">
+            <button class="accordion">
+                Courses
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel" style="display: block;">
+                <p>
+                    Students can enroll their courses and learn in English and Tamil. Plenty of courses are available so, they can enroll and develop their knowledge.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Fees
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel" style="display: none;">
+                <p>
+                    The courses are very cheap compared to other locations. Combo packs are available, so the price will be very low.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Availability
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel" style="display: none;">
+                <p>
+                    Students can study their courses online at any time and anywhere at their convenience.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Contact Support
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel" style="display: none;">
+                <p>
+                    Students can contact support through our social media app, and their queries will be responded to very shortly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html> 
+
+
+
+<!-- <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>FAQ</title>
+        <link rel="stylesheet" href="./Style/stylef.css"/>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+         />
+    </head>
+    <body>
+        <div class="wrapper">
+            <p> Beginning of a New Q&A Session</p>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq">
+                <button class="accordion">
+                   1. What is a framework?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>
+                        A framework is a tool that gives software developers access
+                to prebuilt components or solutions designed to expedite development.
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    2.What is refactoring?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>
+                        Refactoring is the process of taking care of existing code and restructuring it,
+typically to improve the code through small changes without altering its underlying
+behaviour.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    3.How do functional requirements differ from non-functional ones?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>
+                        Generally, functional requirements define a system's operation,
+                        while non-functional requirements outline how a solution should perform or behave.                        
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    4.What are the main features of OOPs?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>
+                        Inheritance, Encapsulation, Polymorphism, Data Abstraction.                       
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    5.What are access modifiers?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="pannel">
+                    <p>
+                        Public, Private, Protected.                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for(i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click",function(){
+                    this.classList.toggle("active");
+                    this.parentElement.classList.toggle("active");
+
+                    var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+                });
+            }
+            </script>
+    </body>
+</html> -->
